@@ -1,0 +1,259 @@
+
+
+
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" style="background-color:#fff;">
+    <head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>国家企业信用信息公示系统</title>
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="keywords" content="全国 企业 信用 信息 公示" />
+		<meta name="description" content="国家企业信用信息公示系统" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+
+	        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script type="text/javascript" src="{% static 'js/gt.js' %}"></script>
+            <script type="text/javascript" src="http://www.gsxt.gov.cn/js/homepage.js?v=201705244049"></script>
+            <script type="text/javascript" src="http://www.gsxt.gov.cn/js/lib/jquery-ui.min.js?v=201705244049"></script>
+            <script type="text/javascript" src="http://www.gsxt.gov.cn/js/lib/auto-custom.js?v=201705244049"></script>
+            <script type="text/javascript" src="http://www.gsxt.gov.cn/js/logcollector.js" ></script>
+
+<div style="display:none">
+    <link rel="stylesheet" href="/css/mid.css"/>
+       <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261033118'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261033118' type='text/javascript'%3E%3C/script%3E"));</script>
+         
+        
+		
+		<script type="text/javascript">
+			window.onload = function() {sessionId_gsxt = "E8D29C4C29F1D01E540457268EBBF318-n2";}
+		</script>
+</div>
+<div id="loading" class="mid loading" style="display: none"><img src="http://www.gsxt.gov.cn/images/loading.png" alt="加载中。。"></div>
+<div id="loadFail" class="mid loadFail" style="display: none"><img src="http://www.gsxt.gov.cn/images/loadFail.png" alt="加载失败"></div>
+<div class="model mid" style="display: none"></div>
+    </head>
+    <body class="fw f14 body_index">
+
+<script type="text/javascript">
+	var NowImg=1;//表示当前显示的div
+	var MaxImg=3;//表示div的个数
+		 MaxImg = (9==9)?3:(9<=3?1:(9<=6?2:3));
+	var flag = false;
+	function show(){
+	if(!flag){
+		for(var i=1;i<=MaxImg;i++){
+			if(NowImg==i)
+				document.getElementById("div"+NowImg).style.display='block';//当前显示的div
+			else
+				document.getElementById("div"+i).style.display='none';
+		}
+		if(NowImg==MaxImg)//判断当前div是否是最后一个，如果是则从第一个重新轮回显示
+			NowImg=1;
+		else
+			NowImg++;//设置下一个显示的图片
+		}
+	}
+	function mouseOn(){
+		flag = true;
+		clearInterval(theTimer);
+	};
+	function mouseLeave(){
+		flag = false;
+		clearInterval(theTimer);
+		setTimeout(startShow);
+	}
+	function startShow() {
+    	theTimer = setInterval("show()",2000);
+	}	
+	var theTimer=setInterval("show()",2000);//设置定时器，显示下一个图片，10000表示每间隔10秒，可以改的。。。
+	function OnInput (event) {
+        }
+        function OnPropChanged (event) {
+            if (event.propertyName.toLowerCase () == "value") {
+            }
+        };
+        
+</script>
+
+<!-- 可能用到的参数备份： -->
+<!--  <form id="form"     action="http://www.gsxt.gov.cn/corp-query-search-1.html">
+               <span class="outerText"><input type="hidden" name="tab" value="ent_tab"><input type="text" name="keyword"  id="keyword" class="innerText" style="height: 24px; width: 594px;"></span><span class="btn_search"><input type="submit" value="开始查询" class="searchBtn" id="submitButton">
+       </span>
+ </form>
+             <span class="active" onclick="location.href='http://www.gsxt.gov.cn/annualreport-portal.html'"><span class="img_menus1"></span>企业信息填报</span>
+             <span class="" onclick="location.href='http://www.gsxt.gov.cn/objection-index.html'"><span class="img_menus2"></span>信息异议</span>
+             <span class="" onclick="location.href='http://www.gsxt.gov.cn/affiche-query-info-homepage.html'"><span class="img_menus3"></span>信息公告</span>
+
+-->
+<div class="body_layout">
+    <input type="hidden" value="" id="keywords_para"/>
+    <div class="blueBar"></div>
+    <div class="body-min1400">
+        <!-- <a class="" id="shiftToNormal" href="/affiche-query-info-paperall.html?uuId=2&FKID=0">切换为标准版</a> -->
+          <img src="../images/index-bg.png"/>
+        <div class="body-1140"></div>
+        <div class="header_container_100000">
+        </div><!-- /header -->
+
+          <div class="home-title">
+            <div class="icon-guohui"></div>
+          </div>
+    <div class="main-layout">
+        <div class="r choose_state2 rel f12" id="choose_state" style="right:88px;">
+          
+          <div class="localtion_icon">
+              <div class="up_half_circle"></div>
+              <div class="down_sanjiao"></div>
+              <div class="white_circle"></div>
+          </div>
+            <div class="updown">
+                <div class="big_sanjiao"></div><div class="small_sanjiao"></div>
+            </div>
+          <div class="tc choose_txt2" id="choose_box">导航</div>
+          <div class="loadingView abs">加载中......</div>
+          <div class="state_box abs">
+             
+              <table class=" f14 tcc" width="100%">
+                <tr><td class="b tc" width="13%">华北</td><td width="4%">|</td> <td><a href="#">北京</a><a href="#">天津</a><a href="#">河北</a><a href="#">山西</a><a href="#">内蒙古</a></td> </tr>
+                <tr><td class="b tc">东北</td><td>|</td> <td><a href="#">辽宁</a><a href="#">吉林</a><a href="#">黑龙江</a></td> </tr>
+                <tr><td class="b tc">华东</td><td>|</td> <td><a href="#">上海</a><a href="#">江苏</a><a href="#">浙江</a><a href="#">安徽</a><a href="#">福建</a><a href="#">江西</a><a href="#">山东</a></td> </tr>
+                <tr><td class="b tc">华南</td><td>|</td> <td><a href="#">广东</a><a href="#">广西</a><a href="#">海南</a></td> </tr>
+                <tr><td class="b tc">华中</td><td>|</td> <td><a href="#">河南</a><a href="#">湖北</a><a href="#">湖南</a></td> </tr>
+                <tr><td class="b tc">西南</td><td>|</td> <td><a href="#">重庆</a><a href="#">四川</a><a href="#">贵州</a><a href="#">云南</a><a href="#">西藏</a></td> </tr>
+                <tr><td class="b tc">西北</td><td>|</td> <td><a href="#">陕西</a><a href="#">甘肃</a><a href="#">青海</a><a href="#">宁夏</a><a href="#">新疆</a></td> </tr>
+              </table>
+          </div>
+    </div><!-- /choose_state -->
+    
+	                        <div style="width:100px;height:35px;margin:-182px 0 20px 1035px;position:absolute;">
+				                  <a href="http://www.gsxt.gov.cn/socialuser-use-login.html" style="float:left;">
+	                                 <p style="color:#999;">登录</p>
+	                              </a>
+	                              <a href="http://www.gsxt.gov.cn/socialuser-use-register.html" style="padding:0px 2px 0 10px;float:left;">
+	                                 <p style="color:#999;">注册</p>
+	                              </a>
+				            </div>
+    
+    
+        <div class="search_items auto" id="search_items" action="http://www.gsxt.gov.cn/corp-query-search-1.html" style="padding:7% 0 16px 10px;">
+            <span class="entInfo selected"><span class='select-icon'></span>企业信用信息</span>
+            <span class="abnormal"><span class='select-icon'></span>经营异常名录</span>
+            <span class="serious"><span class='select-icon'></span>严重违法失信企业名单</span>
+        </div>
+
+        <form class="search_index_box auto fix mt10" id="search_form" action="http://www.gsxt.gov.cn/corp-query-search-1.html" method="post">
+            <span class="search-icon"></span>
+            <input type="hidden" name="tab" value="ent_tab">
+            <input type="hidden" id="province" name="province" value="">
+		    <input type="hidden" name="geetest_challenge" id="geetest_challenge">
+		    <input type="hidden" name="geetest_validate" id="geetest_validate">
+		    <input type="hidden" name="geetest_seccode" id="geetest_seccode">
+            <!-- TODO 伪装成极验变量 -->
+            <input id="token" type="hidden" name="token" value="2016" />
+            <input type="text" name="searchword" id="keyword" class="db f14 l" type="text" placeholder="请输入企业名称、统一社会信用代码或注册号" autocomplete="off" oninput="OnInput (event)" onpropertychange="OnPropChanged (event)">
+            <button id="btn_query" type="button" class="db f18 l fw">查&nbsp;&nbsp;&nbsp;&nbsp;询
+            </button>
+            <button id="pop-captcha-submit" class="db f18 l fw" type="button" style="display: none;"></button>
+            <div id="popup-captcha"></div>
+            <div id ='quick-search-url' style="display:none;">
+			</div>
+            <button id="pop-captcha-aa"  type="button" style="display: none;"></button>
+            <div id="popup-captcha-aa" style="height:0px;"></div>
+        </form><!-- /search_index_box -->
+        <div id="u2">
+        	<div id="u3">
+				<div class="hot_label">
+					<a>热搜榜:</a>
+				</div>
+				<div class="hot_group">
+					<div id="div1" style="display:block; width:500px">
+						<table class="hot_grop_td">
+							<tr>
+									<td><div class="tab_list"><a href='/%7B27048832406279BFAC1622001311C5B70DA4776446EFED55D9FB89339A9DD96357FEFC44C8EA39FF8EFC3A4B98AC7F5D0B7BE75316B2159E3AA63BB014945DC8AA99AA99AA3F5DED5D6E516E5DED784B45F5605360D0454B459C5FFE8652553D190A08DC2A1E6C7F53E353C6F5E03470012D3E3CE8895D19687DAE6819CA63B7A488380B380B380B-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >上饶市奇育贸易有限公司</a></div></td>
+									<td><div class="tab_list"><a href='/%7BA0830FB5C7E5FE382B91A587949642308A23F0E3C1686AD25E7C0EB41D1A5EE4D0797BC34F6DBE78097BBDCC1F2BF8DA8CFC60D491359219BD21BC379313DA4F2D1E2D1E2DB8DA6ADAE9D6E9DA6AB3801526281B281BC2F1764586275F8B8CE4C0D3D105F3C7B5A68A535D84B7A27632436F7C7EAACB1F5B2A3FEC2A5B8821F5E6CA7A497A497A49-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >上饶市信州区可奇可超食品厂</a></div></td>
+									<td><div class="tab_list"><a href='/%7BFDDE52E89AB8A36576CCF8DAC9CB1F6DD77EADBE9C35378F032153E9404703B98D24269E1230E3255426E0914276A587D1A13D89CC68CF44E07CE16ACE4E87121C2F1C2F1C8987B487B487B487B487378700E10033D2EDD2E1D2E1D262C3BB6F6800243735E1172351426EDEE151C4D10541301C0F0DD9B86C28594C9F5928FB528695B9093A093A093A-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >兴业银行股份有限公司</a></div></td>
+							</tr>	
+						</table>
+					</div>
+					<div id="div2" style="display:none; width:500px">
+						<table class="hot_grop_td">
+							<tr>
+									<td><div class="tab_list"><a href='/%7B27048832406279BFAC1622001311C5B70DA4776446EFED55D9FB89339A9DD96357FEFC44C8EA39FF8EFC3A4B98AC7F5D0B7BE75316B2159E3AA63BB014945D845D6E5D6E5D845D6EFBC8784B78C8FB4B7447F795251A29C878477899FB5A22F6F199BDAEAC788EBAC8DBF747F7F9495C88CCBD9182805435E1A5D4C112D4A576DF0B183484B784B784B7-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >前海数量（深圳）科技有限公司</a></div></td>
+									<td><div class="tab_list"><a href='/%7B4360EC5624061DDBC87246647775A1D369C01300228B8931BD9FED57FEF9BD07339A9820AC8E5D9BEA985E2FFCC81B396F1F833772D671FA5EC25FD470F039ACA291A291A237390A350693A093A09FA09323E0D3B1824172417241F176D7AF7B7C14302321F5033745567ACA7AEFDCC91D5928041715C1A074304154874130E34A9E8DA1112211221122-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >厦门数量财富管理有限公司</a></div></td>
+									<td><div class="tab_list"><a href='/%7BBD9E12A8DAF8E325368CB89A898B5F2D973EEDFEDC7577CF436113A9000743F9CD6466DE5270A3651466A0D10236E5C791E17DC98C288F04A03CA12A8E0EC777E2D1E2D1E252C7F461528BB88BB88B3B8B0C8B487B9AA9192A192A152A8BF32720486C7F7DA95F6B190A26B303300316C286F7DBC8CA1E7FABEF9E8B589EEF3C9541527ECEFDCEFDCEFD-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >国务院国有资产监督管理委员会纺织北戴河培训中心</a></div></td>
+							</tr>	
+						</table>
+					</div>
+					<div id="div3" style="display:none; width:500px">
+						<table class="hot_grop_td">
+							<tr>
+									<td><div class="tab_list"><a href='/%7B24078B3143617ABCAF1521031012C6B40EA7746745ECEE56DAF88A30999EDA6054FDFF47CBE93AFC8DFF39489BAF7C5E0878E45015B1169D39A538B317975E87B88BB88BB8875E616F5C6F5C6F5CEC794A757BA212F3522AFEF991B5A6A47086B2C0D3FF2696261500D490E1CDDEDC0869BDF9889D4E88F92A83574468D8EBD8EBD8EB-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >国家发展和改革委员会国家物资储备局设计院</a></div></td>
+									<td><div class="tab_list"><a href='/%7BDDFE72C8BA98834556ECD8FAE9EB3F4DF75E8D9EBC1517AF230173C960672399AD0406BE3210C3057406C0B1625685A7F1811DA9EC48EF64C05CC14AEE6EA77EEBD8EBD8EB32A794241782B182B18217281BAB7241231085B6855C63E4453DE9EE86A2B1B36791A5D7C4E858E87D4E5B8FCBBA9685875332E6A2D3C615D3A271D80C1F3383B083B083B0-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >湖南极数量化投资管理有限公司</a></div></td>
+									<td><div class="tab_list"><a href='/%7BBD9E12A8DAF8E325368CB89A898B5F2D973EEDFEDC7577CF436113A9000743F9CD6466DE5270A3651466A0D10236E5C791E17DC98C288F04A03CA12A8E0EC777E2D1E2D1E252C7F461528BB88BB88B3B8B0C8B0C3F310E3D0E3D0E310EAFD703046C485B598D7B4F3D2E029727142732E6A2D3FFECEE3A5B8FCBBAAF7CBACB18B165765AEAD9EAD9EAD9-1541235949768%7D' onmouseover="mouseOn();" onmouseout="mouseLeave();" >国家发展和改革委员会秦皇岛培训中心</a></div></td>
+							</tr>	
+						</table>
+					</div>
+					
+				</div>
+				<div class="hot_a">
+				<a target='_blank' href='/corp-query-entprise-info-hot-search-list.html?province=100000' style="color:#FF0000;">更多</a>
+				</div>
+        	</div>
+        </div>
+    </div><!-- /main-layout -->
+
+      
+        <div class="app_bar auto fix">
+           <a class="app rel l db" href="/corp-query-entprise-info-xxgg-100000.html" target="_blank">
+              <div class="icon-home-1"></div>
+            <h2 class="f16 pt15">信息公告</h2>
+          </a><!-- /app -->
+          <a class="app rel l db" href="annual-login.html">
+            <div class="icon-home-2"></div>
+            <h2 class="f16 pt15">企业信息填报</h2>
+          </a><!-- /app -->
+
+          <a class="app rel l db" href="http://xwqy.gsxt.gov.cn/" target="_blank">
+            <div class="icon-home-3"></div>
+            <h2 class="f16 pt15">小微企业名录</h2>
+          </a><!-- /app -->
+
+          <a class="app rel l db" href="/affiche-query-info-help.html" target="_blank">
+            <div class="icon-home-5"></div>
+            <h2 class="f16 pt15">使用帮助</h2>
+          </a><!-- /app -->
+        </div><!--app_bar-->
+      </div>
+    </div>
+    <div class="footer2 f12" style="padding-bottom: 20px;">
+      <div class="footer_info1" style="padding-top: 20px;">      
+		<div class="impg" style="margin:0;padding-left:80px;border:0;cursor: pointer;position: absolute;top: 20px;z-index:4" ><img class="dialog" style="height:50px;" src="../images/app_ios.png"  onmousemove="showBigPic(this.src)" onmouseout="closeimg()"/><p style="position:absolute">苹果APP</p></div>
+       <div class="impg" style="margin:0;padding-left:160px;border:0;cursor: pointer;position: absolute;top: 20px;z-index:3" ><img class="dialog" style="height:50px;" src="../images/app_android.png"  onmousemove="showBigPic(this.src)" onmouseout="closeimg()"/><p style="position:absolute">安卓APP</p></div>
+       <div class="impg" style="margin:0;padding-left:240px;border:0;cursor: pointer;position: absolute;top: 20px;z-index:2"><img class="dialog" style="height:50px;" src="../images/app_wx.png"  onmousemove="showBigPic(this.src)" onmouseout="closeimg()"/><p style="position:absolute">微信小程序</p></div>
+       <div class="impg" style="margin:0;padding-left:320px;border:0;cursor: pointer;position: absolute;top: 20px;z-index:1"><img class="dialog" style="height:50px;" src="../images/app_zfb.png"  onmousemove="showBigPic(this.src)" onmouseout="closeimg()"/><p style="position:absolute">支付宝小程序</p></div>
+		<div id="bigPic" style="position:absolute;display:none;">
+		<img src="" width="300px" id="pre_view"/><br />
+		</div>
+        <div>主办单位：中华人民共和国国家工商行政管理总局</div>
+        <div>地址：北京市西城区三里河东路八号&nbsp;&nbsp;&nbsp;邮政编码：100820&nbsp;&nbsp;&nbsp;备案号：京ICP备16053442号-1&nbsp;&nbsp;&nbsp;010-88650267</div>
+        <div class="connect-link"><input type="hidden" value="100000" id="subsite"/><a href="/subPubSys-tel-100000.html" target="_blank" style="color:blue">业务咨询与技术支持联系方式</a></div>
+         <div><script id="_jiucuo_" sitecode='bm30000013' src='http://pucha.kaipuyun.cn/exposure/jiucuo.js'></script>
+         <span id="_span_jiucuo"><img onclick="Link('bm30000013')" style="margin:0;border:0;cursor: pointer;padding-left: 350px;position: absolute;top: 20px;" src="http://121.43.68.40/exposure/images/jiucuo.png?v=bm30000012"></span>
+        </div>
+      </div>
+      
+      
+      
+      <!-- /footer_info -->
+      <!--
+        <div style="position: absolute;right:20%;top:25px;width: 140px;height: 55px;" id="imgBox"><img onclick="Link('bm30000013')" style='margin:0;border:0;cursor: pointer;' src="http://121.43.68.40/exposure/images/jiucuo.png?v=bm30000013"></div>
+      -->
+    </div><!-- /footer -->
+
+    </body>
+    </html>
+
